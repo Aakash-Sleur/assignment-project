@@ -20,7 +20,7 @@ const port = 3000;
 // Middleware
 app.use(
   cors({
-    origin: "*",
+    origin: "https://assignment-project-xc6w.onrender.com",
     credentials: true,
   })
 );
@@ -52,7 +52,7 @@ if (process.env.NODE_ENV === "production") {
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "*", // Replace with your frontend URL in production
+    origin: "https://assignment-project-xc6w.onrender.com", // Replace with your frontend URL in production
     methods: ["GET", "POST"],
     credentials: true,
   },
