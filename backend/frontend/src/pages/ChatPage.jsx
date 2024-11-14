@@ -20,7 +20,7 @@ export default function ChatPage() {
   const [sendMessage] = useSendMessageMutation();
 
   useEffect(() => {
-    socketRef.current = io("http://localhost:3000"); // Replace with your server URL
+    socketRef.current = io("https://assignment-project-xc6w.onrender.com"); // Replace with your server URL
 
     socketRef.current.emit("join chat", id);
 
